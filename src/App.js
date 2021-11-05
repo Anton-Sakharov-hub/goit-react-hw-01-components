@@ -10,6 +10,7 @@ function App(props) {
     return (
         <>
             <h2>Задание 1 - Профиль социальной сети</h2>
+            <h2>Задание 1 - Профиль социальной сети</h2>
             <Profile item={usersData}/>
         </>
     )
