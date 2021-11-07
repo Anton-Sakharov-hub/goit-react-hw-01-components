@@ -10,7 +10,7 @@ function Transactions({ transactions }) {
                 <th>CURRENCY</th>
             </tr>
             {transactions.map(item => 
-            (<tr key={item.iddddddddddd}>
+            (<tr key={item.id}>
                 <TransactionItem
                 type={item.type}
                 amount={item.amount}
