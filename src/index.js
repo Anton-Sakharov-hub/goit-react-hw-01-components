@@ -4,9 +4,6 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const element = React.cloneElement('div');
-console.log(element);
-
 ReactDOM.render(
   <React.StrictMode>
     <App />

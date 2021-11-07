@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+a {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  color: blue;
+}
+
+a:hover,
+a:focus {
+  color: orange;
+}
