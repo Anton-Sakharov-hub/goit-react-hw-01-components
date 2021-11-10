@@ -17,19 +17,19 @@ function App(props) {
     return (
         <ul className="mainList">
             <li>
-                <a onClick={task1}>Задание 1 - Профиль социальной сети</a>
+                <button onClick={task1}>Задание 1 - Профиль социальной сети</button>
                 {/* <Profile profileData={usersData}/> */}
             </li>
             <li>
-                <a onClick={task2}>Задание 2 - Секция статистики</a>
+                <button onClick={task2}>Задание 2 - Секция статистики</button>
                 {/* <Statistics title="Upload stats" statsData={statsData}/> */}
             </li>
             <li>
-                <a onClick={task3}>Задание 3 - Список друзей</a>
+                <button onClick={task3}>Задание 3 - Список друзей</button>
                 {/* <FriendsList friends={friendsData} /> */}
             </li>
             <li>
-                <a onClick={task4}>Задание 4 - История транзакций</a>
+                <button onClick={task4}>Задание 4 - История транзакций</button>
                 {/* <Transactions transactions={transactionsData} /> */}
             </li>
         </ul>
@@ -41,7 +41,7 @@ export default App;
 function task1() {
     ReactDOM.render(
     <>
-        <a onClick={backToHome} className="backButton">Назад</a>
+        <button onClick={backToHome} className="backButton">Назад</button>
         <Profile profileData={usersData} />
     </>,
     document.getElementById('root')
@@ -51,7 +51,7 @@ function task1() {
 function task2() {
     ReactDOM.render(
     <>
-        <a onClick={backToHome} className="backButton">Назад</a>
+        <button onClick={backToHome} className="backButton">Назад</button>
         <Statistics title="Upload stats" statsData={statsData}/>
     </>,
     document.getElementById('root')
@@ -61,7 +61,7 @@ function task2() {
 function task3() {
     ReactDOM.render(
     <>
-        <a onClick={backToHome} className="backButton">Назад</a>
+        <button onClick={backToHome} className="backButton">Назад</button>
         <FriendsList friends={friendsData} />
     </>,
     document.getElementById('root')
@@ -71,7 +71,7 @@ function task3() {
 function task4() {
     ReactDOM.render(
     <>
-        <a onClick={backToHome} className="backButton">Назад</a>
+        <button onClick={backToHome} className="backButton">Назад</button>
         <Transactions transactions={transactionsData} />
     </>,
      document.getElementById('root')

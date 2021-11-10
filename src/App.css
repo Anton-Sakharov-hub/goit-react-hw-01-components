@@ -37,17 +37,20 @@
   }
 }
 
-a {
-  display: block;
+button {
+  display: flex;
   width: 100%;
   cursor: pointer;
   font-size: 20px;
   font-weight: 500;
   color: blue;
+  padding: 0;
+  border: none;
+  background-color: transparent;
 }
 
-a:hover,
-a:focus {
+button:hover,
+button:focus {
   color: orange;
 }
 

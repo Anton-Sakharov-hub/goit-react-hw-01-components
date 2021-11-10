@@ -36,7 +36,6 @@ export default Statistics;
 
 
 function randColor() {
-    console.log(Math.random());
     const r = Math.floor(Math.random() * (256));
     const g = Math.floor(Math.random() * (256));
     const b = Math.floor(Math.random() * (256));
