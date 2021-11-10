@@ -1,12 +1,13 @@
 import PropTypes from "prop-types";
+import './Transactions.scss';
 
 function TransactionItem({type, amount, currency}) {
     
     return (
         <>
-            <td>{type}</td>
-            <td>{amount}</td>
-            <td>{currency}</td>
+            <td className="table__cell"><span className="table__cell__info">{type}</span></td>
+            <td className="table__cell"><span className="table__cell__info">{amount}</span></td>
+            <td className="table__cell"><span className="table__cell__info">{currency}</span></td>
         </>
     )
 }

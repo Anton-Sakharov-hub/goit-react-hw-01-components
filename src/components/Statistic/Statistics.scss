@@ -1,0 +1,40 @@
+.statsSaction {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
+  width: 380px;
+  background-color: #fff;
+}
+.statsList {
+  display: flex;
+}
+
+.stats__title {
+  align-self: center;
+  // background-color: #8c8e8f;
+}
+
+.statsList__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100px;
+  // background-color: rgb(0, 204, 255);
+  padding: 5px 0;
+
+  &:not(:last-child) {
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+  }
+}
+
+.statsList__item__label {
+  color: #fff;
+}
+
+.statsList__item__info {
+  color: #fff;
+  margin-top: 5px;
+}

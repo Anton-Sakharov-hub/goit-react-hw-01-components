@@ -1,7 +1,10 @@
 import PropTypes from 'prop-types';
+import './Profile.scss';
 // import userData from '../usersData.json';
 // console.log(userData);
 // const { avatar, name, tag, location, followers, views, likes } = userData;
+
+
 
 function Profile({profileData}) {
     const { avatar, name, tag, location, stats } = profileData;

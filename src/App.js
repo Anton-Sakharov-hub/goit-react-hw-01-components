@@ -1,22 +1,21 @@
 // import { ReactDOM, React } from 'react';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import usersData from './data/usersData.json';
+import usersData from './components/Profile/usersData.json';
 import Profile from './components/Profile';
-import statsData from './data/statisticalData.json';
-import Statistics from './components/Statistics';
-import friendsData from './data/friendsData.json';
+import statsData from './components/Statistic/statisticalData.json';
+import Statistics from './components/Statistic';
+import friendsData from './components/FriendsList/friendsData.json';
 import FriendsList from './components/FriendsList';
-import transactionsData from './data/transactionsData.json';
+import transactionsData from './components/Transactions/transactionsData.json';
 import Transactions from './components/Transactions';
-import { func } from 'prop-types';
 // import logo from './logo.svg';
 import './App.css';
 
 function App(props) {
     // const { avatar, name, tag, location, followers, views, likes } = props;
     return (
-        <ul>
+        <ul className="mainList">
             <li>
                 <a onClick={task1}>Задание 1 - Профиль социальной сети</a>
                 {/* <Profile profileData={usersData}/> */}
@@ -42,7 +41,7 @@ export default App;
 function task1() {
     ReactDOM.render(
     <>
-        <a onClick={backToHome}>Назад</a>
+        <a onClick={backToHome} className="backButton">Назад</a>
         <Profile profileData={usersData} />
     </>,
     document.getElementById('root')
@@ -52,7 +51,7 @@ function task1() {
 function task2() {
     ReactDOM.render(
     <>
-        <a onClick={backToHome}>Назад</a>
+        <a onClick={backToHome} className="backButton">Назад</a>
         <Statistics title="Upload stats" statsData={statsData}/>
     </>,
     document.getElementById('root')
@@ -62,7 +61,7 @@ function task2() {
 function task3() {
     ReactDOM.render(
     <>
-        <a onClick={backToHome}>Назад</a>
+        <a onClick={backToHome} className="backButton">Назад</a>
         <FriendsList friends={friendsData} />
     </>,
     document.getElementById('root')
@@ -72,7 +71,7 @@ function task3() {
 function task4() {
     ReactDOM.render(
     <>
-        <a onClick={backToHome}>Назад</a>
+        <a onClick={backToHome} className="backButton">Назад</a>
         <Transactions transactions={transactionsData} />
     </>,
      document.getElementById('root')
@@ -85,28 +84,3 @@ function backToHome() {
         document.getElementById('root')
     );
 };
-
-
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;

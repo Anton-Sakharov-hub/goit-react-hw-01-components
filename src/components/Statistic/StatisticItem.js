@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types';
+import './Statistics.scss'
 
 function StatisticItem(props) {
     const { label, percentage } = props;
 
     return (
     <>
-        <span>{label}</span>
-        <span>{percentage}</span>
+        <span className="statsList__item__label">{label}</span>
+        <span className="statsList__item__info">{percentage}%</span>
     </>
     )};
 

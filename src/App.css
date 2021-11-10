@@ -50,3 +50,11 @@ a:hover,
 a:focus {
   color: orange;
 }
+
+.mainList {
+  margin: 20px;
+}
+
+.backButton {
+  margin: 20px;
+}

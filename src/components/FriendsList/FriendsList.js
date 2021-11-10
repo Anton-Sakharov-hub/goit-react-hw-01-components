@@ -1,13 +1,14 @@
 import PropTypes from "prop-types";
 import FriendsListItems from "./FriensListItems";
+import "./FriendsList.scss";
 
 function FriensList(props) {
     const { friends } = props;
 
     return (
-        <ul>
+        <ul className="friendsList">
             {friends.map(item => (
-                <li key={item.id}>
+                <li key={item.id} className="friendsList__item">
                     <FriendsListItems
                         name={item.name}
                         avatar={item.avatar}
